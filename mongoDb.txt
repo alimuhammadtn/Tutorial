@@ -1,0 +1,54 @@
+1. Go to Control Panel and click on Administrative Tools.
+2. Double click on Services. A new window opens up.
+3. Search MongoDB.exe. Right click on it and select Start.
+The server will start. Now execute npm start again and the code might work this time.
+
+Login Mongo Db
+
+Clusters >> connect >>
+
+DATABASE operation
+--------------
+CREATE  - use<databsename>
+DELETE - db.dropDatabase()
+
+UPDATE collection
+-----------------
+db.collection.update(
+   {},
+   {
+     $set
+      {
+      }
+   }
+)
+db.collection.updateMany
+
+FIND
+-----
+db.leads.find()
+db.leads.find({"tax":"30"})
+
+Operator
+--------
+Eq
+lt
+lte
+gt
+gte
+$and
+$or
+db.leads.find({"tax":{$lte:"30"}})
+db.leads.find({$and:[{"name","joe"},{"tax":{$lte:"30"}}]})
+
+
+Collection
+----------
+create - db.createCollection(<name of collection>);
+drop - db.collectionname.drop()
+
+
+Use in terminal
+---------------
+Download mongoshell >> rename the extracted file and rename to "mongosh" and put it in program files
+and navigate the path - .\mongosh.exe 
