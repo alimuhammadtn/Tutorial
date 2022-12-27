@@ -1,0 +1,11 @@
+npm i -g @nestjs/cli
+nest new project-name
+npm install -g npm@9.2.0
+nest g controller items
+npm run start:dev
+nest g service items
+
+npm i @nestjs/mongoose mongoose
+nest g resource <name> --no-spec
+
+Dto- data transfering object
